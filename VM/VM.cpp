@@ -52,11 +52,11 @@ void JMP(vector<unsigned char> buffer, int &it, unsigned char regs[]) {
 }
 
 void JZ(vector<unsigned char> buffer, int &it, unsigned char regs[], bool zeroFlag) {
-    if (zeroFlag) JMP(buffer, it, regs);    //jump jei failo pabaiga
+    if (zeroFlag) JMP(buffer, it, regs);    
 }
 
 void JNZ(vector<unsigned char> buffer, int &it, unsigned char regs[], bool zeroFlag) {
-    if (!zeroFlag) JMP(buffer, it, regs);    //jump jei failo pabaiga
+    if (!zeroFlag) JMP(buffer, it, regs);    
 }
 
 void JFE(vector<unsigned char> buffer, int &it, unsigned char regs[], bool endOfFile) {
